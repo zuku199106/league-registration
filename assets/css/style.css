@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+h1, h2 {
+    margin: 0 0 10px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 1em 'Raleway', sans-serif;
+    color: #ffffff;
+    background: url('../images/background.jpg') no-repeat 30% 10%;
+    background-size: cover;
+}
+.container {
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+}
+
+.logo {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.about {
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+.register {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+
+.register form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px;
+}
+
+.register form > label {
+    text-align: right;
+}
+
+.register form > input[type="text"] {
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    outline: none;
+    padding: 3px 5px;
+}
+
+.register form .regulamin {
+    text-align: right;
+    grid-column: 1 / 3;
+    grid-row: 7;
+}
+
+.register form input[type="submit"] {
+    grid-column: 2 / 3;
+    grid-row: 8;
+    background: linear-gradient(#e062f3, #21304a);
+    border: none;
+    padding: 8px 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #a00000;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        background: url('../images/background.jpg') no-repeat 70% 10%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        background: url('../images/background.jpg') no-repeat 80% 10%;
+        background-size: cover;
+    }
+    .container {
+        width: 70%;
+        margin: auto;
+        padding-top: 50px;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background: url('../images/background.jpg') no-repeat 80% 10%;
+        background-size: cover;
+    }
+    .container {
+        margin: auto;
+        width: 80%;
+        padding-top: 50px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .register form input[type="submit"] {
+        grid-column: 1 / 3;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        font-size: .8em;
+    }
+    .container {
+        width: 90%;
+    }
+}
