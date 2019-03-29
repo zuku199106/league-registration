@@ -22,8 +22,14 @@ a {
 body {
     font: 1em 'Raleway', sans-serif;
     color: #ffffff;
-    background: url('../images/background.jpg') no-repeat 30% 10%;
+    /* background: url('../images/background.jpg') no-repeat 30% 10%;
+    background-size: cover; */
+    background-image: url('../images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-color: #21304a;
 }
 .container {
     width: 70%;
@@ -99,6 +105,7 @@ body {
     body {
         background: url('../images/background.jpg') no-repeat 70% 10%;
         background-size: cover;
+        background-attachment: fixed;
     }
 }
 
@@ -106,6 +113,7 @@ body {
     body {
         background: url('../images/background.jpg') no-repeat 80% 10%;
         background-size: cover;
+        background-attachment: fixed;
     }
     .container {
         width: 70%;
@@ -119,6 +127,7 @@ body {
     body {
         background: url('../images/background.jpg') no-repeat 80% 10%;
         background-size: cover;
+        background-attachment: fixed;
     }
     .container {
         margin: auto;
